@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import Clock from "./Clock";
 import AddCount from "./AddCount";
 import ChangePageSize from "./ChangePageSize";
+import CartID from "./CartID";
 
 const Page = ({ title, linkTo, tick }) => (
   <div>
@@ -10,6 +11,7 @@ const Page = ({ title, linkTo, tick }) => (
     <Clock lastUpdate={tick.lastUpdate} light={tick.light} />
     <AddCount />
     <ChangePageSize />
+    <CartID />
     <nav>
       <Link href={linkTo}>
         <a>Navigate</a>
